@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+﻿import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import {
   Send,
@@ -31,7 +31,7 @@ export default function App() {
 
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
-    { role: "assistant", content: "Assalomu alaykum! Men Asan Tolepovning virtual yordamchisiman. Asan — Fullstack dasturchi, UI/UX dizayner va o'z jamoasiga ega bo'lgan tajribali mutaxassis. U hozirda bir nechta yirik loyihalar, xususan, Frontend, Backend, Android ilovalar va murakkab Telegram botlar ustida ishlamoqda. Sizda qanday savollar bor?" }
+    { role: "assistant", content: "Assalomu alaykum! Men Asan Tolepovning virtual yordamchisiman. Asan — Fullstack dasturchi, UI/UX dizayner va o'z jamoasiga ega bo'lgan tajribali mutaxassis. U hozirda bir nechta yirik loyihalar, xususan, Frontend, Backend, Android ilovalar ustida ishlamoqda. Sizda qanday savollar bor?" }
   ]);
   const [inputMessage, setInputMessage] = useState("");
   const [isTyping, setIsTyping] = useState(false);
@@ -75,9 +75,9 @@ export default function App() {
               
               Asan haqida ma'lumotlar:
               - Ko‘p qirrali mutaxassis: Bir vaqtning o‘zida bir nechta murakkab loyihalar ustida ishlaydi.
-              - Texnologik ko‘nikmalar: Frontend (interaktiv interfeyslar), Backend (barqaror tizimlar), Android Studio (mobil ilovalar), Telegram Bot (katta tajriba).
+              - Texnologik ko‘nikmalar: Frontend (interaktiv interfeyslar), Backend (barqaror tizimlar), Android Studio (mobil ilovalar).
               - Jamoa va Loyihalar: O‘z jamoasi bor. Hozirda tibbiy sun'iy intellekt va boshqaruv tizimlari (Softwash kabi) ustida ishlamoqda.
-              - Bog‘lanish: Asan bilan shaxsan gaplashish uchun Telegram (@Asan_Tolepov) orqali yozish kerak. U vaqtining asosiy qismini Telegramda o‘tkazadi.
+              - Bog‘lanish: Asan bilan Instagram, YouTube yoki Facebook orqali bog'lanish mumkin.
               
               Har doim o'zbek tilida, muloyim va professional javob bering.`
             },
@@ -99,22 +99,6 @@ export default function App() {
   };
 
   const socialLinks = [
-    {
-      id: "tg1",
-      icon: Send,
-      title: "Telegram",
-      subtitle: "@Asan_Tolepov",
-      href: "https://t.me/Asan_Tolepov",
-      color: "telegram" as const,
-    },
-    {
-      id: "tg2",
-      icon: Send,
-      title: "Telegram",
-      subtitle: "@Tolepov_Asan",
-      href: "https://t.me/Tolepov_Asan",
-      color: "telegram" as const,
-    },
     {
       id: "ig",
       icon: Instagram,
