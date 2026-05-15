@@ -1,4 +1,4 @@
-﻿import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import {
   Send,
@@ -99,6 +99,14 @@ export default function App() {
   };
 
   const socialLinks = [
+    {
+      id: "tg2",
+      icon: Send,
+      title: "Telegram",
+      subtitle: "@Tolepov_Asan",
+      href: "https://t.me/Tolepov_Asan",
+      color: "telegram" as const,
+    },
     {
       id: "ig",
       icon: Instagram,
